@@ -1,0 +1,12 @@
+name: 'Setup golangci-lint Action'
+description: 'Downloads and installs the golangci-lint tool'
+branding:
+  icon: check-circle
+  color: green
+inputs:
+  version:
+    required: true
+    description: 'Version of golangci-lint to install'
+runs:
+  using: 'node12'
+  main: 'src/index.js'

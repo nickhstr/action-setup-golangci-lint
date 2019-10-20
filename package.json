@@ -1,0 +1,18 @@
+{
+    "name": "action-setup-golanci-lint",
+    "version": "1.0.0",
+    "description": "GitHub action for setting up golangci-lint (https://github.com/golangci/golangci-lint).",
+    "keywords": [
+      "actions",
+      "setup",
+      "golangci-lint"
+    ],
+    "main": "src/index.js",
+    "author": "Nick Hester",
+    "license": "MIT",
+    "dependencies": {
+      "@actions/core": "^1.2.0",
+      "@actions/tool-cache": "^1.1.2"
+    }
+  }
+  
