@@ -1,0 +1,15 @@
+on: [push]
+
+jobs:
+  test_action:
+    runs-on: ubuntu-latest
+    name: Test this action
+    steps:
+      - name: Test action
+        id: test-action
+        uses: nickhstr/action-setup-golangci-lint@v0.2.0
+        with:
+          version: 1.24.0
+
+      - name: Validate
+        run: golangci-lint --version
