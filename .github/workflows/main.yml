@@ -1,0 +1,17 @@
+on: [push]
+
+jobs:
+  test_action:
+    runs-on: ubuntu-latest
+    name: Test action
+    steps:
+      - name: Setup Go
+        uses: actions/setup-go@v1
+        with:
+          go-version: "1.14"
+
+      - name: Test action
+        id: test-action
+        uses: GusAntoniassi/action-setup-golangci-lint@master
+        with:
+          version: 1.24.0
