@@ -29,8 +29,8 @@ async function installer(version) {
   // Add golangci-lint dir to bin
   core.addPath(toolRoot);
 
-  // let g = await io.which('golangci-lint', true);
-  // core.debug(`which golangci-lint: ${g}`)
+  let g = await io.which('golangci-lint', true);
+  core.debug(`which golangci-lint: ${g}`)
 }
 
 /**
