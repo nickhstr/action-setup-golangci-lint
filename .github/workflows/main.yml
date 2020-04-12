@@ -10,3 +10,6 @@ jobs:
         uses: GusAntoniassi/action-setup-golangci-lint@master
         with:
           version: 1.24.0
+
+      - name: Validate
+        run: golangci-lint --version
