@@ -1,6 +1,7 @@
 const path = require('path');
 const core = require('@actions/core');
 const tc = require('@actions/tool-cache');
+const io = require('@actions/io');
 
 const toolName = 'golangci-lint';
 
